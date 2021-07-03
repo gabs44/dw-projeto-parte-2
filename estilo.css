@@ -1,0 +1,117 @@
+body {
+    background:white; 
+    padding: 0;
+    margin:0;
+}
+
+.cabecalho{ 
+    height: 80px;
+    display: flex;
+    align-items:center;
+    background-color:palevioletred;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 10vw; 
+    margin-left: 10px;   
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+
+    font-size: 20px ;
+    color: black;
+}
+
+a:active{
+
+    color: black;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+form{
+    width: 600px;
+    margin: 30px auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin:10px
+
+}
+
+form label{
+   margin: 0 0 10px
+
+}
+
+form input{
+    margin: 0 0 20px
+
+}
+
+.sexo div{
+    display: flex;
+    flex-direction:row;
+}
+
+.sexo #masculino{
+    margin-left: 60px;
+}
+
+.sexo input{
+    margin-right: 5px;
+
+}
+
+.preferencias{
+    grid-column: span 2; /*Faz a div com os checkbox ocupar o espaço de dois*/
+
+}
+
+.preferencias div{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.preferencias input{
+    margin-left: 20px;
+
+}
+
+.botao {
+    grid-column: 1;
+}
+
+.botao input hover{
+    color: violet;
+    
+}
+
+.rodape{
+    height: 150px;
+    width: 100%;
+    background-color:palevioletred;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
