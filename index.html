@@ -13,131 +13,135 @@
         </nav>
     </header>
     <main>
-        <div class="titulo">
-        <h2>Cadrastro de usuário</h2>
-        </div>
         <form>
-            <div>
-                <label for="Nome"> Nome completo:</label>
-                <input type="text" name="Nome" id="nome">
-            </div>
-
-            <div>
-                <label for="E-mail"> E-mail:</label>
-                <input type="email" name="E-mail" id="e-mail">
-            </div>
-
-            <div>
-                <label for="Telefone"> Telefone:</label>
-                <input type="number" name="Telefone" id="telefone">
-            </div>
-
-            <div>
-                <label for="Senha"> Senha:</label>
-                <input type="password" name="Senha" id="senha">
-            </div>
-
-            <div class="sexo">
-                <label for="Sexo"> Sexo:</label>
+            <fieldset>
+                <legend>Cadastro de usuário</legend>
+                <div class="contorno">
+                <div class="titulo">
+                    <h2>Dados do usuário</h2>
+                </div>
                 <div>
-                    <input type="radio" name="Sexo" value="femele"> Feminino
-                    <input type="radio" name="Sexo" value="Male" id="masculino"> Masculino
+                    <label for="Nome"> Nome completo:</label>
+                    <input type="text" name="Nome" id="nome">
+                </div>
+
+                <div>
+                    <label for="E-mail"> E-mail:</label>
+                    <input type="email" name="E-mail" id="e-mail">
+                </div>
+
+                <div>
+                    <label for="Telefone"> Telefone:</label>
+                    <input type="number" name="Telefone" id="telefone">
+                </div>
+
+                <div>
+                    <label for="Senha"> Senha:</label>
+                    <input type="password" name="Senha" id="senha">
+                </div>
+
+                <div class="sexo">
+                    <label for="Sexo"> Sexo:</label>
+                    <div>
+                        <input type="radio" name="Sexo" value="femele"> Feminino
+                        <input type="radio" name="Sexo" value="Male" id="masculino"> Masculino
+                    </div>
+                </div>
+                
+                <div>
+                    <label> Data e hora de nascimento:</label>
+                    <input type="datetime-local" name="Data e hora" id="data e hora">
+                </div>
+
+                <div>
+                    <label for="Uf de nascimento"> UF de nascimento:</label>
+                    <select name="UF" id="UF">
+                        <option value="" selected disabled hidden></option>
+                        <option value="RO">RO</option>
+                        <option value="AC">AC</option>
+                        <option value="AM">AM</option>
+                        <option value="RR">RR</option>
+                        <option value="PA">PA</option>
+                        <option value="AP">AP</option>
+                        <option value="TO">TO</option>
+                        <option value="MA">MA</option>
+                        <option value="PI">PI</option>
+                        <option value="CE">CE</option>
+                        <option value="RN">RN</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="AL">AL</option>
+                        <option value="SE">SE</option>
+                        <option value="BA">BA</option>
+                        <option value="MG">MG</option>
+                        <option value="ES">ES</option>
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                        <option value="PR">PR</option>
+                        <option value="SC">SC</option>
+                        <option value="RS">RS</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="GO">GO</option>
+                        <option value="DF">DF</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="Cor">Selecione sua cor favorita:</label>
+                    <input type="color" name="Cor" id="Cor" value="#FFFFFF">
+                </div>
+
+                <div>
+                    <label for="data especial"> Informe uma data especial:</label>
+                    <input type="date" name="data especial" id="data especial">
+                </div>
+
+                <div>
+                    <label for="hora de acordar">Que horas costuma acordar:</label>
+                    <input type="time" name="hora de acordar" id="hora de acordar">
+                </div>
+
+                <div>
+                    <label for="familiares">Quantas pessoas tem a sua família?</label>
+                    <input type="number" name="familiares" id="familiares">
+                </div>
+
+                <div>
+                    <label for="url">Adicione a url do seu perfil na rede social:</label>
+                    <input type="url" name="url" id="url">
+                </div>
+
+                <div class="preferencias">
+                    <label for="preferencias">Quais as suas preferências musicais?</label>
+                    <div>
+                        <input type="checkbox" name="preferencias" value= Rock> Rock
+                        <input type="checkbox" name="preferencias" value= Sertanejo> Sertanejo
+                        <input type="checkbox" name="preferencias" value= Pagode> Pagode
+                        <input type="checkbox" name="preferencias" value= Samba> Samba
+                        <input type="checkbox" name="preferencias" value= Funk> Funk
+                        <input type="checkbox" name="preferencias" value= Reggae> Reggae
+                        <input type="checkbox" name="preferencias" value= Pop> Pop
+                        <input type="checkbox" name="preferencias" value= Forró> Forró
+                        <input type="checkbox" name="preferencias" value=Indie> Indie
+                        <input type="checkbox" name="preferencias" value=Gospel> Gospel
+                        <input type="checkbox" name="preferencias" value=MPB> MPB
+                        <input type="checkbox" name="preferencias" value=Jazz> Jazz
+                    </div>
+                </div>
+
+                <div class="imagem">
+                    <label for="imagem">Envie uma foto de perfil:</label>
+                    <input type="file" name="imagem" id="imagem">
+                </div>
+
+
+                <div class="botao">
+                    <input type="submit" name="Enviar" value="Enviar">
+                    <input type="reset" name="Redefinir" value="Redefinir">
                 </div>
             </div>
-            
-            <div>
-                <label> Data e hora de nascimento:</label>
-                <input type="datetime-local" name="Data e hora" id="data e hora">
-            </div>
-
-            <div>
-                <label for="Uf de nascimento"> UF de nascimento:</label>
-                <select name="UF" id="UF">
-                    <option value="" selected disabled hidden></option>
-                    <option value="RO">RO</option>
-                    <option value="AC">AC</option>
-                    <option value="AM">AM</option>
-                    <option value="RR">RR</option>
-                    <option value="PA">PA</option>
-                    <option value="AP">AP</option>
-                    <option value="TO">TO</option>
-                    <option value="MA">MA</option>
-                    <option value="PI">PI</option>
-                    <option value="CE">CE</option>
-                    <option value="RN">RN</option>
-                    <option value="PB">PB</option>
-                    <option value="PE">PE</option>
-                    <option value="AL">AL</option>
-                    <option value="SE">SE</option>
-                    <option value="BA">BA</option>
-                    <option value="MG">MG</option>
-                    <option value="ES">ES</option>
-                    <option value="RJ">RJ</option>
-                    <option value="SP">SP</option>
-                    <option value="PR">PR</option>
-                    <option value="SC">SC</option>
-                    <option value="RS">RS</option>
-                    <option value="MS">MS</option>
-                    <option value="MT">MT</option>
-                    <option value="GO">GO</option>
-                    <option value="DF">DF</option>
-                </select>
-            </div>
-
-            <div>
-                <label for="Cor">Selecione sua cor favorita:</label>
-                <input type="color" name="Cor" id="cor" value="#FFFFFF">
-            </div>
-
-            <div>
-                <label for="data especial"> Informe uma data especial:</label>
-                <input type="date" name="data especial" id="data especial">
-            </div>
-
-            <div>
-                <label for="hora de acordar">Que horas costuma acordar:</label>
-                <input type="time" name="hora de acordar" id="acordar">
-            </div>
-
-            <div>
-                <label for="familiares">Quantas pessoas tem a sua família?</label>
-                <input type="number" name="familiares" id="familiares">
-            </div>
-
-            <div>
-                <label for="url">Adicione a url do seu perfil na rede social</label>
-                <input type="url" name="url" id="url">
-            </div>
-
-            <div class="preferencias">
-                <label for="preferencias">Quais as suas preferências musicais?</label>
-                <div>
-                    <input type="checkbox" name="preferencias" value= Rock> Rock
-                    <input type="checkbox" name="preferencias" value= Sertanejo> Sertanejo
-                    <input type="checkbox" name="preferencias" value= Pagode> Pagode
-                    <input type="checkbox" name="preferencias" value= Samba> Samba
-                    <input type="checkbox" name="preferencias" value= Funk> Funk
-                    <input type="checkbox" name="preferencias" value= Reggae> Reggae
-                    <input type="checkbox" name="preferencias" value= Pop> Pop
-                    <input type="checkbox" name="preferencias" value= Forró> Forró
-                    <input type="checkbox" name="preferencias" value=Indie> Indie
-                    <input type="checkbox" name="preferencias" value=Gospel> Gospel
-                    <input type="checkbox" name="preferencias" value=MPB> MPB
-                    <input type="checkbox" name="preferencias" value=Jazz> Jazz
-                </div>
-            </div>
-
-            <div class="imagem">
-                <label for="imagem">Envie uma foto de perfil:</label>
-                <input type="file" name="imagem" id="imagem">
-            </div>
-
-
-            <div class="botao">
-                <input type="submit" name="Enviar" value="Enviar">
-                <input type="reset" name="Redefinir" value="Redefinir">
-            </div>
-
+            </fieldset>
         </form>
         <footer class="rodape">
             <p>Copyright IFPB - 2021</p>

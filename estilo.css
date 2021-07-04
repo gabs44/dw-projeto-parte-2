@@ -38,16 +38,33 @@ a:active{
 
 .titulo{
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: 100%;
+    grid-column: span 2;
 
 }
 
 form{
-    width: 600px;
+    width: 700px;
     margin: 30px auto;
-    display:grid;
+}
+
+.contorno{
+    display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+fieldset{
+    border-color: #F1B1BD;
+}
+
+fieldset legend{
+    background: #F9BEC7;
+    color: black;
+    padding: 2px 10px ;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 20px;
 
 }
 
